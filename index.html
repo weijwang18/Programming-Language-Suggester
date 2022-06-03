@@ -20,6 +20,8 @@
     <title>Programming Language Suggester</title>
   </head>
   <body>
+    <h1>Which Programming Language</h1>
+    <h4>Should I Learn First?</h4>
     <form id="survey">
       <label for="question1"
         >1. Do you already know a programming language?</label
@@ -43,18 +45,7 @@
           A few.
         </label>
       </div>
-      <div class="radio">
-        <label>
-          <input
-            type="radio"
-            name="programmingKnowledge"
-            value="I know more than three"
-          />
-          I know more than three.
-        </label>
-      </div>
       <!-- End Question 1 -->
-
       <label for="question2"
         >2. Which platform or field would you like to work in?</label
       >
@@ -67,14 +58,14 @@
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="platform" value="Enterprise" />
-          Enterprise.
+          <input type="radio" name="platform" value="Mobile" />
+          Mobile.
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" name="platform" value="Mobile" />
-          Mobile.
+          <input type="radio" name="platform" value="Enterprise" />
+          Enterprise.
         </label>
       </div>
       <div class="radio">
@@ -84,41 +75,84 @@
         </label>
       </div>
       <!-- End Question 2 -->
-
       <label for="question3"
-        >1. Do you already know a programming language?</label
+        >3. What size company would be ideal for you?</label
       >
       <div class="radio">
         <!-- Question 3 -->
         <label>
-          <input type="radio" name="programmingKnowledge" value="No" checked />
-          No.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="programmingKnowledge" value="Only one" />
-          Only one.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="programmingKnowledge" value="A few" />
-          A few.
+          <input
+            type="radio"
+            name="companySize"
+            value="Small or early stage startup"
+            checked
+          />
+          Small or early stage startup.
         </label>
       </div>
       <div class="radio">
         <label>
           <input
             type="radio"
-            name="programmingKnowledge"
-            value="I know more than three"
+            name="companySize"
+            value="Medium or mid-to-late stage startup"
           />
-          I know more than three.
+          Medium or mid-to-late stage startup.
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input
+            type="radio"
+            name="companySize"
+            value="Large, established company"
+          />
+          Large, established company.
         </label>
       </div>
       <!-- End Question 3 -->
-
+      <label for="question4">4. Why do you want to learn programming?</label>
+      <div class="radio">
+        <!-- Question 4 -->
+        <label>
+          <input type="radio" name="reason" value="Make Money" checked />
+          Make Money.
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="reason" value="Improve myself" />
+          Improve myself.
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="reason" value="Just for fun" />
+          Just for fun.
+        </label>
+      </div>
+      <!-- End Question 4 -->
+      <label for="question5">5. What do you think about Microsoft?</label>
+      <div class="radio">
+        <!-- Question 5 -->
+        <label>
+          <input type="radio" name="microsoft" value="I'm a fan" checked />
+          I'm a fan!
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="microsoft" value="Not Bad" />
+          Not Bad.
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="microsoft" value="Suck" />
+          Suck.
+        </label>
+      </div>
+      <!-- End Question 5 -->
       <button type="submit" class="btn btn-primary">Show me the result!</button>
     </form>
   </body>
