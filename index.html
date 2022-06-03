@@ -20,147 +20,154 @@
     <title>Programming Language Suggester</title>
   </head>
   <body>
-    <h1>Which Programming Language</h1>
-    <h4>Should I Learn First?</h4>
-    <form id="survey">
-      <label for="question1"
-        >1. Do you already know a programming language?</label
-      >
-      <div class="radio">
+    <div class="container">
+      <h1>Which Programming Language</h1>
+      <h4>Should I Learn First?</h4>
+      <form id="survey">
         <!-- Question 1 -->
-        <label>
-          <input type="radio" name="knowledge" value="1" checked />
-          No.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="knowledge" value="2" />
-          Only one.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="knowledge" value="3" />
-          A few.
-        </label>
-      </div>
-      <!-- End Question 1 -->
-      <label for="question2"
-        >2. Which platform or field would you like to work in?</label
-      >
-      <div class="radio">
+        <div class="card">
+          <label for="question1"
+            ><strong
+              >1. Do you already know a programming language?</strong
+            ></label
+          >
+          <div class="radio">
+            <label>
+              <input type="radio" name="knowledge" value="1" checked />
+              No.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="knowledge" value="2" />
+              Only one.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="knowledge" value="3" />
+              A few.
+            </label>
+          </div>
+        </div>
+        <!-- End Question 1 -->
         <!-- Question 2 -->
-        <label>
-          <input type="radio" name="platform" value="1" checked />
-          Web.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="platform" value="2" />
-          Enterprise.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="platform" value="3" />
-          3D/Gaming.
-        </label>
-      </div>
-      <!-- End Question 2 -->
-      <label for="question3"
-        >3. What size company would be ideal for you?</label
-      >
-      <div class="radio">
+        <div class="card">
+          <label for="question2"
+            ><strong
+              >2. Which platform or field would you like to work in?</strong
+            ></label
+          >
+          <div class="radio">
+            <label>
+              <input type="radio" name="platform" value="1" checked />
+              Web.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="platform" value="2" />
+              Enterprise.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="platform" value="3" />
+              3D/Gaming.
+            </label>
+          </div>
+        </div>
+        <!-- End Question 2 -->
         <!-- Question 3 -->
-        <label>
-          <input type="radio" name="companySize" value="1" checked />
-          Startup.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="companySize" value="2" />
-          Corporate.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="companySize" value="3" />
-          Big tech companies.
-        </label>
-      </div>
-      <!-- End Question 3 -->
-      <label for="question4">4. Why do you want to learn programming?</label>
-      <div class="radio">
+        <div class="card">
+          <label for="question3"
+            ><strong
+              >3. What size company would be ideal for you?</strong
+            ></label
+          >
+          <div class="radio">
+            <label>
+              <input type="radio" name="companySize" value="1" checked />
+              Startup.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="companySize" value="2" />
+              Corporate.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="companySize" value="3" />
+              Big tech companies.
+            </label>
+          </div>
+        </div>
+        <!-- End Question 3 -->
         <!-- Question 4 -->
-        <label>
-          <input type="radio" name="reason" value="1" />
-          Just for fun.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="reason" value="2" checked />
-          Make Money.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="reason" value="3" />
-          Improve myself.
-        </label>
-      </div>
-      <!-- End Question 4 -->
-      <label for="question5">5. I perfer to learn things...</label>
-      <div class="radio">
+        <div class="card">
+          <label for="question4"
+            >4. Why do you want to learn programming?</label
+          >
+          <div class="radio">
+            <label>
+              <input type="radio" name="reason" value="1" />
+              Just for fun.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="reason" value="2" checked />
+              Make Money.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="reason" value="3" />
+              Improve myself.
+            </label>
+          </div>
+        </div>
+        <!-- End Question 4 -->
         <!-- Question 5 -->
-        <label>
-          <input type="radio" name="difficulty" value="1" checked />
-          The easy way.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="difficulty" value="2" />
-          The slightly harder way.
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="difficulty" value="3" />
-          The really hard way(but easier to pick up other languages in the
-          future).
-        </label>
-      </div>
-      <!-- End Question 5 -->
-      <button type="submit" class="btn btn-primary">Show me the result!</button>
-    </form>
-
-    <div id="result">
-      <div id="javaScript">
-        <h1>JavaScript</h1>
-        <p>
-          We can’t hate you ‘cause you’re popular! JavaScript is used in over
-          92.6% of all websites as per some studies. Take any popular content
-          platform like Google, Facebook, Twitter, Amazon, Instagram, NYTimes
-          ... and you can bet that the front-end of its website uses JavaScript.
-        </p>
-      </div>
-
-      <div id="java">
-        <h1>Java</h1>
-        <p>
-          If you want to build something that’s a sure thing, Java’s your jam.
-          There are lots of applications and websites that will not work unless
-          you have Java installed, and more are created every day.
-        </p>
-      </div>
-
-      <div id="cPlus">
-        <h1>C++</h1>
-        <p>C++</p>
+        <div class="card">
+          <label for="question5"
+            ><strong>5. I perfer to learn things...</strong></label
+          >
+          <div class="radio">
+            <label>
+              <input type="radio" name="difficulty" value="1" checked />
+              The easy way.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="difficulty" value="2" />
+              The slightly harder way.
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="difficulty" value="3" />
+              The really hard way(but easier to pick up other languages in the
+              future).
+            </label>
+          </div>
+        </div>
+        <!-- End Question 5 -->
+        <button type="submit" class="btn btn-primary">
+          Show me the result!
+        </button>
+      </form>
+      <div id="result">
+        <h3>
+          <strong
+            >Based on your answers, you should try out
+            <span class="outPut"></span
+          ></strong>
+          !
+        </h3>
       </div>
     </div>
   </body>

@@ -1,8 +1,5 @@
 $(document).ready(function () {
   $("form#survey").submit(function (event) {
-    $("#result").click(function () {
-      $(this).remove();
-    });
     event.preventDefault();
     const q1 = parseInt($("input:radio[name=knowledge]:checked").val());
     const q2 = parseInt($("input:radio[name=platform]:checked").val());
@@ -12,11 +9,14 @@ $(document).ready(function () {
     let result = q1 + q2 + q3 + q4 + q5;
     console.log(result);
     if (result >= 5 && result < 10) {
-      $("#javaScript").show();
+      $(".outPut").text("JavaScript");
+      $("#result").show();
     } else if (result >= 10 && result < 15) {
-      $("#java").show();
+      $(".outPut").text("Java");
+      $("#result").show();
     } else {
-      $("#cPlus").show();
+      $(".outPut").text("C++");
+      $("#result").show();
     }
   });
 });
