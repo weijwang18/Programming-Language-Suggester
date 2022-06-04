@@ -4,6 +4,7 @@
 
 body {
   background-color: #0f232a;
+  font-family: "Ubuntu", sans-serif;
 }
 h1,
 h4,
@@ -44,5 +45,5 @@ h4 {
 }
 
 .outPut {
-  color: blue;
+  color: #095ed7;
 }
