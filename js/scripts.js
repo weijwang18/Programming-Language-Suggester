@@ -11,14 +11,14 @@ $(document).ready(function () {
     const q5 = parseInt($("input:radio[name=difficulty]:checked").val());
     let result = q1 + q2 + q3 + q4 + q5;
     if (result >= 5 && result <= 8) {
+      $("#result").fadeIn("slow");
       $(".outPut").text("JavaScript");
-      $("#result").show();
     } else if (result >= 9 && result <= 12) {
+      $("#result").fadeIn("slow");
       $(".outPut").text("Java");
-      $("#result").show();
     } else {
+      $("#result").fadeIn("slow");
       $(".outPut").text("C++");
-      $("#result").show();
     }
   });
 });

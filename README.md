@@ -17,9 +17,10 @@ _This Programming Language Suggester webpage asks users a series of questions ab
 
 ## Setup/Installation Requirements
 
-- _Clone this repository to your desktop_
-- _Navigate to the top level of the directory_
-- _Open index.html in your browser_
+- _You have to have an internet connection for it to work because Boostrap and JQuery are using a CDN._
+- _Clone this repository to your desktop._
+- _Navigate to the top level of the directory._
+- _Open index.html in your browser._
 
 ## License
 
