@@ -21,10 +21,6 @@ _This Programming Language Suggester webpage asks users a series of questions ab
 - _Navigate to the top level of the directory_
 - _Open index.html in your browser_
 
-## Known Bugs
-
-- _No known bugs or issues are present._
-
 ## License
 
 _MIT_

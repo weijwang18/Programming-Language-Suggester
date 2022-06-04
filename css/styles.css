@@ -2,6 +2,9 @@
   display: none;
 }
 
+body {
+  background-color: #0f232a;
+}
 h1,
 h4,
 #result {
@@ -16,6 +19,9 @@ h4 {
   margin-bottom: 20px;
 }
 
+.header {
+  color: #ef8233;
+}
 .card {
   width: 50%;
   padding: 10px;
@@ -34,6 +40,7 @@ h4 {
   padding: 20px;
   margin-bottom: 30px;
   margin-top: 20px;
+  color: #ef8233;
 }
 
 .outPut {
