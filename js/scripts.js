@@ -1,4 +1,7 @@
 $(document).ready(function () {
+  const name = prompt("Welcome! What's your name?");
+  $(".name").text(name);
+
   $("form#survey").submit(function (event) {
     event.preventDefault();
     const q1 = parseInt($("input:radio[name=knowledge]:checked").val());
@@ -7,11 +10,10 @@ $(document).ready(function () {
     const q4 = parseInt($("input:radio[name=reason]:checked").val());
     const q5 = parseInt($("input:radio[name=difficulty]:checked").val());
     let result = q1 + q2 + q3 + q4 + q5;
-    console.log(result);
-    if (result >= 5 && result < 10) {
+    if (result >= 5 && result <= 8) {
       $(".outPut").text("JavaScript");
       $("#result").show();
-    } else if (result >= 10 && result < 15) {
+    } else if (result >= 9 && result <= 12) {
       $(".outPut").text("Java");
       $("#result").show();
     } else {
